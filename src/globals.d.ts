@@ -1,0 +1,32 @@
+declare module "*.css";
+declare module "*.scss";
+declare module "*.sass";
+declare module "*.jpg" {
+  import type { StaticImageData } from "next/image";
+  const src: StaticImageData;
+  export default src;
+}
+declare module "*.jpeg" {
+  const content: string;
+  export default content;
+}
+declare module "*.png" {
+  const content: string;
+  export default content;
+}
+declare module "*.gif" {
+  const content: string;
+  export default content;
+}
+declare module "*.webp" {
+  const content: string;
+  export default content;
+}
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+declare module "*.avif" {
+  const content: string;
+  export default content;
+}
